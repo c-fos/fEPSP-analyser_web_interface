@@ -7,6 +7,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^individual/(?P<path>.+)/$', 'analyser.views.individual'),
     url(r'^sheduler/(?P<path>.+)/$', 'analyser.views.sheduler'),
-    url(r'^R/$', 'Rinterface.views.rtest'),
+    url(r'^R/$', 'Rinterface.views.RConfig'),
     url(r'^admin/', include(admin.site.urls)),
 )
