@@ -120,6 +120,7 @@ class Spike(models.Model):
     maxtomin = models.FloatField()
     area = models.FloatField()
     fibre = models.BooleanField()
+    manual = models.BooleanField()
             
     class Meta:
         db_table = 'spikes'
