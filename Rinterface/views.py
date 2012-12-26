@@ -6,7 +6,7 @@ from rpy2.robjects.packages import importr
 from rpy2.robjects import r
 
 def report(configDict):
-    r('.libPaths("/home/pilat/R/i686-pc-linux-gnu-library/2.15/")')
+    r('.libPaths("/home/pilat/R/i486-pc-linux-gnu-library/2.15/")')
     r.setwd('/home/pilat/workspace/web_fEPSPA/media/')
     knitr=importr("knitr")
     md=importr("markdown")
