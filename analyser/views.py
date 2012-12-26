@@ -23,7 +23,7 @@ from root.fEPSPanalyser import fepspAnalyser
 from sheduler.main import shedule
 
 def individual(request,path):
-    test_filelist=os.listdir(path)
+    test_filelist=os.listdir("/%s" % path)
     input=request.POST
     dict={                                              'list': test_filelist,
                                                         'path': path,

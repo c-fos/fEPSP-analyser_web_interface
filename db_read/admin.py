@@ -59,10 +59,15 @@ class RecordTagsAdmin(admin.ModelAdmin):
 class SpikesAdmin(admin.ModelAdmin):
     fieldsets = [
         ('number', {'fields': ['number']}),
+        ('delay', {'fields': ['delay']}),
+        ('manual', {'fields': ['manual']}),
+        ('length', {'fields': ['length']}),
+        ('angle1', {'fields': ['angle1']}),
         ('fibre', {'fields': ['fibre']}),
         ('ampl', {'fields': ['ampl']}),
     ]
-    list_display = ('ampl','number', 'fibre')
+    list_display = ('ampl','number','fibre','manual','length','delay','angle1')
+    search_fields = ['ampl','number']
 #===============================================================================
 
 admin.site.register(Experiment, ExpAdmin)

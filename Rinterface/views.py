@@ -22,6 +22,7 @@ def RConfig(request):
     dict={                                              'wname': 'filterdb',
                                                         'wuser': 'filteruser_local',
                                                         'wpass': 'filter123',
+                                                        'wanalyserType': 'analyserType',
                                                         'wvar': 'ampl',
                                                         'wspike_num':'1',
                                                         'wresp_num':'1',
@@ -32,6 +33,7 @@ def RConfig(request):
                                                         'wtag':"control,detail",
                                                         'check':'0'}
     for i in input:
+        print(i,input[i])
         try:
             dict[i]=input[i]
         except:
