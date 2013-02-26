@@ -8,6 +8,7 @@ from rpy2.robjects import r
 def report(configDict):
     r('.libPaths("/home/pilat/R/i486-pc-linux-gnu-library/2.15/")')
     r.setwd('/home/pilat/workspace/web_fEPSPA/media/')
+    #r.setwd('/home/pilat/workspace/PostProcessing_v.2/')
     knitr=importr("knitr")
     md=importr("markdown")
     for i in configDict.keys():
@@ -20,7 +21,7 @@ def report(configDict):
 def RConfig(request):
     input=request.POST
     dict={                                              'wname': 'filterdb',
-                                                        'wuser': 'filteruser_local',
+                                                        'wuser': 'filter_user',
                                                         'wpass': 'filter123',
                                                         'wanalyserType': 'analyserType',
                                                         'wvar': 'ampl',

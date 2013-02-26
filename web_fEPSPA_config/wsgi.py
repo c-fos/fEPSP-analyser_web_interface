@@ -23,8 +23,11 @@ sys.path.append('/home/pilat/workspace/fEPSP-analyser/filter_script/')
 #sys.path.append('/home/pilat/workspace/fEPSP-analyser/filter_script/')
 #sys.path.append('/home/pilat/workspace/fEPSP-analyser/filter_script/root/')
 #sys.path.append('/usr/lib/python2.7/site-packages/django')
+#sys.setdefaultencoding('utf-8')
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "web_fEPSPA_config.settings")
+
+#reload(sys)
 
 # This application object is used by any WSGI server configured to use this
 # file. This includes Django's development server, if the WSGI_APPLICATION
